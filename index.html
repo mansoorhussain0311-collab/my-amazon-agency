@@ -11,9 +11,11 @@
 
     <header>
         <div class="logo"><b>SCALEZONE</b></div>
-        <nav>
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <nav id="nav-menu">
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li class="social-icons">
@@ -44,6 +46,23 @@
             <h2>Amazon FBA Wholesale <br><span>& Private Label Specialist</span></h2>
             <p>"Your growth is my mission — we turn smart strategies into sustainable Amazon success."</p>
             <a href="https://wa.me/923319837613" class="cta-btn"><i class="fab fa-whatsapp"></i> JOIN US NOW</a>
+        </div>
+    </section>
+
+    <section class="container" id="team">
+        <h2 class="sec-title orange-text">TEAM MEMBERS</h2>
+        <div class="h-line center"></div>
+        <div class="why-choose-circles">
+            <div class="circle-item">
+                <div class="profile-wrapper" style="width: 200px; height: 200px; margin: 0 auto 15px auto;">
+                    <div class="glow-ring"></div>
+                    <div class="profile-main-box">
+                        <img src="Mansoor.jpeg" alt="Mansoor Hussain" class="profile-img">
+                    </div>
+                </div>
+                <h4>MANSOOR HUSSAIN</h4>
+                <p class="orange-text"><b>WEBSITE DESIGNER</b></p>
+            </div>
         </div>
     </section>
 
@@ -124,5 +143,16 @@
         </div>
         <div class="footer-bottom"><p>&copy; 2026 <b>SCALEZONE</b>. All rights reserved.</p></div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("nav-menu");
+            if (x.className === "active") {
+                x.className = "";
+            } else {
+                x.className = "active";
+            }
+        }
+    </script>
 </body>
 </html>
