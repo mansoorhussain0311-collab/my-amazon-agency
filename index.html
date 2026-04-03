@@ -15,9 +15,9 @@
         <nav id="nav-menu">
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#team">Team</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
                 <li class="social-icons">
                     <a href="https://www.facebook.com/share/1NKRNiKCAB/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.tiktok.com/@amz.with.mubeenkhan?_r=1&_t=ZS-95DYNrZfOi0" target="_blank"><i class="fab fa-tiktok"></i></a>
@@ -46,23 +46,6 @@
             <h2>Amazon FBA Wholesale <br><span>& Private Label Specialist</span></h2>
             <p>"Your growth is my mission — we turn smart strategies into sustainable Amazon success."</p>
             <a href="https://wa.me/923319837613" class="cta-btn"><i class="fab fa-whatsapp"></i> JOIN US NOW</a>
-        </div>
-    </section>
-
-    <section class="container" id="team">
-        <h2 class="sec-title orange-text">TEAM MEMBERS</h2>
-        <div class="h-line center"></div>
-        <div class="why-choose-circles">
-            <div class="circle-item">
-                <div class="profile-wrapper" style="width: 200px; height: 200px; margin: 0 auto 15px auto;">
-                    <div class="glow-ring"></div>
-                    <div class="profile-main-box">
-                        <img src="Mansoor.jpeg" alt="Mansoor Hussain" class="profile-img">
-                    </div>
-                </div>
-                <h4>MANSOOR HUSSAIN</h4>
-                <p class="orange-text"><b>WEBSITE DESIGNER</b></p>
-            </div>
         </div>
     </section>
 
@@ -111,6 +94,23 @@
         </div>
     </section>
 
+    <section class="container" id="team" style="padding-top: 0;">
+        <h2 class="sec-title orange-text">TEAM MEMBERS</h2>
+        <div class="h-line center"></div>
+        <div class="why-choose-circles">
+            <div class="circle-item">
+                <div class="profile-wrapper" style="width: 200px; height: 200px; margin: 0 auto 15px auto;">
+                    <div class="glow-ring"></div>
+                    <div class="profile-main-box">
+                        <img src="Mansoor.jpeg" alt="Mansoor Hussain" class="profile-img">
+                    </div>
+                </div>
+                <h4>MANSOOR HUSSAIN</h4>
+                <p class="orange-text"><b>WEBSITE DESIGNER</b></p>
+            </div>
+        </div>
+    </section>
+
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-box about-box">
@@ -147,11 +147,7 @@
     <script>
         function toggleMenu() {
             var x = document.getElementById("nav-menu");
-            if (x.className === "active") {
-                x.className = "";
-            } else {
-                x.className = "active";
-            }
+            x.classList.toggle("active");
         }
     </script>
 </body>
