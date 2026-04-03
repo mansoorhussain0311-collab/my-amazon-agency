@@ -28,7 +28,7 @@ nav ul li a:hover { color: #ff9900; }
     padding: 40px 20px;
 }
 
-/* Profile Circle Fix */
+/* Profile Circle */
 .profile-wrapper { position: relative; width: 240px; height: 240px; display: flex; justify-content: center; align-items: center; margin-bottom: 25px; }
 .glow-ring { position: absolute; width: 100%; height: 100%; border-radius: 50%; border: 2px solid #ff9900; animation: pulseGlow 2.5s infinite; }
 .profile-main-box { width: 92%; height: 92%; border-radius: 50%; overflow: hidden; z-index: 2; border: 3px solid #ff9900; background: #131921; }
@@ -98,6 +98,7 @@ h2 span { color: #ff9900; }
         padding: 20px; 
         text-align: center; 
         border-bottom: 2px solid #ff9900; 
+        z-index: 1001;
     }
     nav.active { display: block; }
     nav ul { flex-direction: column; }
