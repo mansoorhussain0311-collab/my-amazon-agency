@@ -3,89 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCALEZONE | Amazon FBA Specialist</title>
+    <title>SCALEZONE | Amazon FBA Specialist & Agency</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo-container">
-            <img src="logo.jpeg" alt="Logo" class="nav-logo-img">
-            <div class="custom-logo-text">
-                <span class="scale">SCAL<span class="e-circle">E</span></span>
-                <span class="zone">ZONE</span>
+        <div class="nav-container">
+            <div class="logo-branding" onclick="location.href='#home'">
+                <div class="scale-text-group">
+                    <span class="vertical-tag">THE SMART WAY TO GROW</span>
+                    <span class="logo-main">SCALE</span>
+                </div>
+                <div class="zone-outer-circle">
+                    <span class="zone-inner-text">ZONE</span>
+                </div>
             </div>
+            
+            <div class="menu-toggle" id="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li class="nav-social">
+                        <a href="https://www.facebook.com/share/1NKRNiKCAB/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@amz.with.mubeenkhan" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@amzbymubeenkhan" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        
-        <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-        <nav id="nav-menu">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li class="social-icons">
-                    <a href="https://www.facebook.com/share/1NKRNiKCAB/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.tiktok.com/@amz.with.mubeenkhan?_r=1&_t=ZS-95DYNrZfOi0" target="_blank"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://youtube.com/@amzbymubeenkhan?si=RbiMjWvQet1QO92m" target="_blank"><i class="fab fa-youtube"></i></a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <section class="hero-section" id="home">
-        <div class="hero-left-profile">
-            <div class="profile-container motion-float">
-                <div class="profile-glow pulse-glow"></div>
-                <div class="profile-circle">
-                    <img src="Profile.jpg.jpeg" alt="Mubeen Khan">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="profile-wrapper motion-float">
+                    <div class="profile-glow"></div>
+                    <div class="img-box">
+                        <img src="Profile.jpg" alt="Mubeen Khan">
+                    </div>
+                </div>
+                <div class="ceo-meta">
+                    <h1>Mubeen Khan</h1>
+                    <p class="title-sub">CEO of <span class="orange">SCALEZONE</span></p>
                 </div>
             </div>
-            <div class="hero-profile-info">
-                <h1>Mubeen Khan</h1>
-                <p class="ceo-tag">CEO of <b>SCALEZONE</b></p>
-                <div class="h-line"></div>
-            </div>
-        </div>
-
-        <div class="hero-right">
-            <span class="badge">Amazon Top-Rated Seller</span>
-            <h2>Amazon FBA Wholesale <br><span>& Private Label Specialist</span></h2>
-            <p>"Your growth is my mission — we turn smart strategies into sustainable Amazon success."</p>
-            <div class="cta-wrapper">
-                <a href="https://wa.me/923319837613" class="cta-btn"><i class="fab fa-whatsapp"></i> JOIN US NOW</a>
+            <div class="hero-right">
+                <span class="top-badge"><i class="fas fa-medal"></i> Amazon Top-Rated Seller</span>
+                <h2 class="main-heading">Amazon FBA Wholesale <br><span class="orange">& Private Label Specialist</span></h2>
+                <p class="hero-desc">"We don't just manage accounts; we build brands. From LLC formation to scaling sales, your success is our core mission."</p>
+                <div class="hero-btns">
+                    <a href="https://wa.me/923319837613" class="btn-primary"><i class="fab fa-whatsapp"></i> START YOUR JOURNEY</a>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="about-section" id="about">
         <div class="container">
-            <div class="about-logo-box">
-                <img src="logo.jpeg" alt="Scalezone Logo">
-            </div>
-
-            <h2 class="sec-title orange-text">About <b>SCALEZONE</b> Agency</h2>
-            <div class="h-line center"></div>
-            <p class="about-text">
-                <b>SCALEZONE</b> Agency is a premier digital consultancy dedicated to empowering entrepreneurs in the global e-commerce marketplace. With deep-rooted expertise in the Amazon Wholesale FBA and Private Label models.
-            </p>
-            
-            <div class="why-choose-grid">
-                <div class="circle-item">
-                    <div class="circle-icon"><i class="fas fa-chart-line"></i></div>
-                    <h4>Proven Results</h4>
-                    <p>Helping clients cross the $100K+ sales milestone with data-driven strategies.</p>
+            <div class="about-grid">
+                <div class="about-img-box">
+                    <img src="logo.png" alt="Scalezone Agency" class="floating-logo">
                 </div>
-                <div class="circle-item">
-                    <div class="circle-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h4>100% Secure</h4>
-                    <p>Your account safety is our priority with Amazon-compliant techniques.</p>
-                </div>
-                <div class="circle-item">
-                    <div class="circle-icon"><i class="fas fa-headset"></i></div>
-                    <h4>Expert Support</h4>
-                    <p>Dedicated assistance for all your Amazon inquiries.</p>
+                <div class="about-text-content">
+                    <h2 class="sec-title">About <span class="orange">SCALEZONE</span> Agency</h2>
+                    <div class="h-line"></div>
+                    <p>SCALEZONE is a premier digital agency in Pakistan specializing in global e-commerce. We help entrepreneurs launch and scale their Amazon businesses with expert-driven strategies.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i class="fas fa-rocket"></i>
+                            <h4>100+</h4>
+                            <p>Successful Launches</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-shield-check"></i>
+                            <h4>100%</h4>
+                            <p>Account Safety</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,198 +96,161 @@
 
     <section class="services-section" id="services">
         <div class="container">
-            <h2 class="sec-title orange-text">Explore Top Services</h2>
-            <div class="h-line center"></div>
-            <p style="text-align: center; margin-top: -30px; margin-bottom: 30px; color: #666;">(Click on any service to see details)</p>
+            <h2 class="sec-title center">Professional <span class="orange">Services</span></h2>
+            <p class="sub-center">Click on any service to explore details, benefits, and packages.</p>
             
-            <div class="services-grid">
-                <div class="s-card" onclick="openModal('llc')">
-                    <i class="fas fa-file-invoice"></i>
-                    <h3>LLC Services</h3>
-                    <p>US, UK & UAE Registration</p>
-                    <span class="view-more">View Details</span>
-                </div>
-
-                <div class="s-card" onclick="openModal('management')">
-                    <i class="fas fa-user-shield"></i>
-                    <h3>Account Manage</h3>
-                    <p>A-Z Account Handling</p>
-                    <span class="view-more">View Details</span>
-                </div>
-
-                <div class="s-card" onclick="openModal('mentorship')">
-                    <i class="fas fa-users"></i>
-                    <h3>Mentorship</h3>
-                    <p>One-on-One Training</p>
-                    <span class="view-more">View Details</span>
-                </div>
-
-                <div class="s-card" onclick="openModal('hunting')">
-                    <i class="fas fa-box-open"></i>
-                    <h3>Product Hunting</h3>
-                    <p>Data-Driven Research</p>
-                    <span class="view-more">View Details</span>
-                </div>
-
-                <div class="s-card" onclick="openModal('approval')">
-                    <i class="fas fa-check-circle"></i>
-                    <h3>Brand Approval</h3>
-                    <p>Wholesale Approvals</p>
-                    <span class="view-more">View Details</span>
-                </div>
-
-                <div class="s-card" onclick="openModal('pl')">
-                    <i class="fas fa-tags"></i>
-                    <h3>Private Label</h3>
-                    <p>Build Your Own Brand</p>
-                    <span class="view-more">View Details</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="serviceModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal()">&times;</span>
-            <div id="modal-body">
-                </div>
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="https://wa.me/923319837613" class="join-btn">CONSULT WITH US</a>
-            </div>
-        </div>
-    </div>
-
-    <section class="container" id="team" style="padding-top: 0;">
-        <h2 class="sec-title orange-text">TEAM MEMBERS</h2>
-        <div class="h-line center"></div>
-        <div class="team-container">
-            <div class="circle-item">
-                <div class="profile-wrapper-team motion-float">
-                    <div class="glow-ring-team pulse-glow"></div>
-                    <div class="profile-main-box-team">
-                        <img src="Mansoor.jpeg" alt="Mansoor Hussain">
+            <div class="services-wrapper">
+                <div class="service-box" onclick="toggleService(this)">
+                    <div class="s-header">
+                        <i class="fas fa-university"></i>
+                        <h3>LLC & Company Formation</h3>
+                        <i class="fas fa-plus toggle-icon"></i>
+                    </div>
+                    <div class="s-body">
+                        <div class="s-content-inner">
+                            <p class="s-desc">We handle the legal headache so you can focus on selling. Full registration support for international markets.</p>
+                            <div class="details-split">
+                                <div class="split-col">
+                                    <h4>Regions Covered:</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> <b>US LLC:</b> EIN, Articles of Org, Registered Agent.</li>
+                                        <li><i class="fas fa-check"></i> <b>UK LTD:</b> Company House Reg, VAT setup.</li>
+                                        <li><i class="fas fa-check"></i> <b>UAE Firm:</b> Professional License & Setup.</li>
+                                    </ul>
+                                </div>
+                                <div class="split-col">
+                                    <h4>Key Benefits:</h4>
+                                    <ul>
+                                        <li><i class="fas fa-star"></i> Tax Exemption Strategies.</li>
+                                        <li><i class="fas fa-star"></i> Verified Business Bank Accounts.</li>
+                                        <li><i class="fas fa-star"></i> Professional Address provided.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/923319837613" class="s-link">Inquire for Package <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-                <h4>MANSOOR HUSSAIN</h4>
-                <p class="orange-text"><b>WEBSITE DESIGNER</b></p>
+
+                <div class="service-box" onclick="toggleService(this)">
+                    <div class="s-header">
+                        <i class="fas fa-tasks"></i>
+                        <h3>A-Z Account Management</h3>
+                        <i class="fas fa-plus toggle-icon"></i>
+                    </div>
+                    <div class="s-body">
+                        <div class="s-content-inner">
+                            <p class="s-desc">Sit back while our experts manage every single click on your Amazon Seller Central.</p>
+                            <div class="details-split">
+                                <div class="split-col">
+                                    <h4>Included Tasks:</h4>
+                                    <ul>
+                                        <li>Daily Inventory Checks.</li>
+                                        <li>Customer Query Handling.</li>
+                                        <li>Case Log Management.</li>
+                                    </ul>
+                                </div>
+                                <div class="split-col">
+                                    <h4>Why Choose Us:</h4>
+                                    <ul>
+                                        <li>Sales Growth via PPC.</li>
+                                        <li>Weekly Progress Reports.</li>
+                                        <li>Suspension Prevention.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/923319837613" class="s-link">Book a Call <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-box" onclick="toggleService(this)">
+                    <div class="s-header">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Winning Product Hunting</h3>
+                        <i class="fas fa-plus toggle-icon"></i>
+                    </div>
+                    <div class="s-body">
+                        <div class="s-content-inner">
+                            <p class="s-desc">We use paid tools (Helium10, JungleScout) to find products with high ROI and low competition.</p>
+                            <div class="details-split">
+                                <div class="split-col">
+                                    <h4>Criteria:</h4>
+                                    <ul>
+                                        <li>High Monthly Revenue.</li>
+                                        <li>Low Review Count targets.</li>
+                                        <li>Healthy Profit Margins (25%+).</li>
+                                    </ul>
+                                </div>
+                                <div class="split-col">
+                                    <h4>Deliverables:</h4>
+                                    <ul>
+                                        <li>Competitor Analysis.</li>
+                                        <li>Keyword Research Data.</li>
+                                        <li>Sourcing Leads.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/923319837613" class="s-link">Get a Sample Hunt <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-box about-box">
-                <div class="footer-logo">
-                    <span class="footer-logo-text"><b>SCALEZONE</b></span>
+    <section class="team-section" id="team">
+        <div class="container">
+            <h2 class="sec-title center">The <span class="orange">Visionaries</span></h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="t-img-box">
+                        <img src="Mansoor.jpeg" alt="Mansoor Hussain">
+                    </div>
+                    <h3>MANSOOR HUSSAIN</h3>
+                    <p class="orange">Full-Stack Web Designer</p>
+                    <div class="t-socials">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                <p class="footer-bio"><b>SCALEZONE</b> is a leading e-commerce service provider committed to transforming your Amazon business into a global brand.</p>
-                <div class="footer-social-links">
-                    <a href="https://www.facebook.com/share/1NKRNiKCAB/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.tiktok.com/@amz.with.mubeenkhan?_r=1&_t=ZS-95DYNrZfOi0"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://youtube.com/@amzbymubeenkhan"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-box links-box">
-                <h3 class="white-text">Quick Links</h3>
-                <div class="footer-line"></div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                </ul>
-            </div>
-            <div class="footer-box links-box">
-                <h3 class="white-text">Policies</h3>
-                <div class="footer-line"></div>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Refund Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                </ul>
             </div>
         </div>
-        <div class="footer-bottom"><p>&copy; 2026 <b>SCALEZONE</b>. All rights reserved.</p></div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="f-grid">
+                    <div class="f-col">
+                        <h3>SCALE<span>ZONE</span></h3>
+                        <p>Empowering the next generation of e-commerce moguls across the globe.</p>
+                    </div>
+                    <div class="f-col">
+                        <h4>Contact Us</h4>
+                        <p><i class="fas fa-phone"></i> +92 331 9837613</p>
+                        <p><i class="fas fa-envelope"></i> info@scalezone.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <b>SCALEZONE</b>. All rights reserved. | Developed by <b>Mansoor Hussain</b></p>
+        </div>
     </footer>
 
     <script>
         function toggleMenu() {
-            var x = document.getElementById("nav-menu");
-            x.classList.toggle("active");
+            const nav = document.getElementById('nav-menu');
+            nav.classList.toggle('active');
         }
 
-        // Service Modal Data
-        const serviceData = {
-            'llc': {
-                title: 'LLC & Business Formation',
-                desc: 'Professional business registration services for Amazon sellers across major global markets.',
-                features: ['US LLC Formation (Texas, Wyoming, etc.)', 'UK LTD Registration', 'UAE Freezone Business Setup', 'EIN & ITIN Assistance'],
-                benefits: ['Legal Tax Protection', 'Verified Business Identity', 'Global Bank Account Access']
-            },
-            'management': {
-                title: 'Full Account Management',
-                desc: 'We handle your Amazon store end-to-end so you can focus on scaling.',
-                features: ['Daily Operations Monitoring', 'Customer Support Handling', 'Inventory Management', 'PPC & Ad Optimization'],
-                benefits: ['Passive Income Stream', 'Expert Decision Making', 'Safe Account Health']
-            },
-            'mentorship': {
-                title: '1-on-1 Mentorship',
-                desc: 'Personalized training sessions to make you an Amazon expert.',
-                features: ['Live Zoom Sessions', 'Real-case Study Analysis', 'Wholesale & PL Strategies', 'Lifetime Community Access'],
-                benefits: ['Avoid Expensive Mistakes', 'Direct Expert Feedback', 'Accelerated Learning']
-            },
-            'hunting': {
-                title: 'Product Hunting',
-                desc: 'We find high-demand, low-competition products using premium data tools.',
-                features: ['Helium10 & Jungle Scout Analysis', 'Competitor Research', 'Profit Margin Calculation', 'Sourcing Feasibility'],
-                benefits: ['High Success Rate', 'Reduced Risk', 'Scalable Product Ideas']
-            },
-            'approval': {
-                title: 'Brand & Category Approval',
-                desc: 'Unlock restricted brands and categories with our proven methods.',
-                features: ['Soft/Hard Brand Approvals', 'Invoice Verification', 'Gating Services', 'Wholesale Distributor Links'],
-                benefits: ['Access to Top Brands', 'High Selling Velocity', 'Market Authority']
-            },
-            'pl': {
-                title: 'Private Label Launch',
-                desc: 'Create and launch your own brand from scratch.',
-                features: ['Logo & Packaging Design', 'Manufacturer Sourcing', 'EBC/A+ Content Creation', 'Launch & Rank Strategy'],
-                benefits: ['Asset Valuation', 'Zero Competition on Listing', 'Complete Brand Control']
-            }
-        };
-
-        function openModal(serviceId) {
-            const data = serviceData[serviceId];
-            const modal = document.getElementById('serviceModal');
-            const body = document.getElementById('modal-body');
-            
-            body.innerHTML = `
-                <h2 class="orange-text">${data.title}</h2>
-                <p style="margin: 15px 0;">${data.desc}</p>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; margin-top: 20px;">
-                    <div>
-                        <h4 style="color: #131921;"><i class="fas fa-list-check orange-text"></i> What we do:</h4>
-                        <ul style="padding-left: 20px; margin-top: 10px; font-size: 14px;">
-                            ${data.features.map(f => `<li>${f}</li>`).join('')}
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 style="color: #131921;"><i class="fas fa-star orange-text"></i> Key Benefits:</h4>
-                        <ul style="padding-left: 20px; margin-top: 10px; font-size: 14px;">
-                            ${data.benefits.map(b => `<li>${b}</li>`).join('')}
-                        </ul>
-                    </div>
-                </div>
-            `;
-            modal.style.display = "block";
-        }
-
-        function closeModal() {
-            document.getElementById('serviceModal').style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            const modal = document.getElementById('serviceModal');
-            if (event.target == modal) { modal.style.display = "none"; }
+        function toggleService(element) {
+            const allServices = document.querySelectorAll('.service-box');
+            allServices.forEach(box => {
+                if(box !== element) box.classList.remove('active');
+            });
+            element.classList.toggle('active');
         }
     </script>
 </body>
