@@ -1,121 +1,61 @@
+/* Purana sara reset waisa hi hai */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
-
 body { background-color: #f8f9fa; color: #131921; line-height: 1.6; overflow-x: hidden; }
 
-/* Header */
-header { 
-    width: 100%; padding: 10px 8%; display: flex; justify-content: space-between; align-items: center; 
-    background: #131921; position: fixed; top: 0; z-index: 1000; border-bottom: 2px solid #ff9900; 
-}
-
+/* Header Fix */
+header { width: 100%; padding: 10px 8%; display: flex; justify-content: space-between; align-items: center; background: #131921; position: fixed; top: 0; z-index: 1000; border-bottom: 2px solid #ff9900; }
 .logo-container { display: flex; align-items: center; gap: 12px; }
 .nav-logo-img { height: 40px; width: auto; border-radius: 4px; }
-.logo-text { font-size: 24px; color: #ff9900; letter-spacing: 1.5px; }
+
+/* NEW LOGO STYLING (Overlay & Close Zone) */
+.logo-design-new { display: flex; align-items: center; position: relative; }
+.scale-box { display: flex; flex-direction: column; line-height: 1; }
+.overlay-txt { color: #ff9900; font-size: 7px; font-weight: bold; letter-spacing: 0.5px; margin-bottom: -2px; }
+.scale-txt { color: #ff9900; font-size: 26px; font-weight: 900; letter-spacing: -0.5px; }
+.zone-circle-new { background: white; border-radius: 50%; width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; margin-left: -6px; border: 1.5px solid #ff9900; }
+.zone-txt { color: black; font-size: 9px; transform: rotate(-90deg); font-weight: 900; }
 
 nav ul { display: flex; list-style: none; align-items: center; }
 nav ul li { margin-left: 20px; }
 nav ul li a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; transition: 0.3s; }
-nav ul li a:hover { color: #ff9900; }
 .social-icons a { color: #ff9900; font-size: 18px; margin-left: 15px; }
 .menu-toggle { display: none; color: #ff9900; font-size: 24px; cursor: pointer; }
 
-/* Hero Section */
-.hero-section { 
-    display: flex; flex-wrap: wrap; min-height: 100vh; align-items: center; 
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.92)), url('AMAZON.png'); 
-    background-size: cover; background-position: center; color: white; padding-top: 80px;
-}
-
+/* Hero Section (Waisa hi hai) */
+.hero-section { display: flex; flex-wrap: wrap; min-height: 100vh; align-items: center; background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.92)), url('AMAZON.png'); background-size: cover; background-position: center; color: white; padding-top: 80px; }
 .hero-left-profile { flex: 0 0 40%; min-width: 350px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px 20px; }
-.profile-container { position: relative; width: 260px; height: 260px; margin-bottom: 20px; }
-.profile-circle { width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 4px solid #ff9900; position: relative; z-index: 2; box-shadow: 0 0 30px rgba(0,0,0,0.6); }
+.profile-circle { width: 260px; height: 260px; border-radius: 50%; overflow: hidden; border: 4px solid #ff9900; position: relative; z-index: 2; }
 .profile-circle img { width: 100%; height: 100%; object-fit: cover; }
-.hero-profile-info { text-align: center; }
-.hero-profile-info h1 { font-size: 34px; margin-bottom: 5px; }
-.ceo-tag { color: #ff9900; font-weight: 600; font-size: 19px; }
-.h-line { margin: 10px auto; background: #ff9900; width: 65px; height: 4px; border-radius: 2px; }
-
-/* Animations */
-.pulse-glow { animation: pulseGlow 2.5s infinite ease-in-out; }
-@keyframes pulseGlow {
-    0% { transform: scale(1); opacity: 0.4; }
-    50% { transform: scale(1.15); opacity: 0.1; }
-    100% { transform: scale(1); opacity: 0.4; }
-}
-.motion-float { animation: floating 3s infinite ease-in-out; }
-@keyframes floating {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-12px); }
-}
-
 .hero-right { flex: 1; padding: 40px 5%; text-align: center; }
-.badge { background: #ff9900; color: #131921; padding: 6px 14px; border-radius: 4px; font-weight: bold; font-size: 12px; text-transform: uppercase; }
-h2 { font-size: clamp(32px, 5vw, 55px); margin: 25px 0; line-height: 1.1; font-weight: 800; }
-h2 span { color: #ff9900; }
-.hero-right p { font-size: 19px; color: #ddd; margin-bottom: 30px; max-width: 650px; margin-inline: auto; }
-.cta-btn { background: #25d366; color: white; padding: 16px 38px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-flex; align-items: center; transition: 0.3s; }
+.cta-btn { background: #25d366; color: white; padding: 16px 38px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-flex; transition: 0.3s; }
 
-/* About Section & Updated Logo Box (Sirf yahan changes hain) */
-.container { max-width: 1150px; margin: 0 auto; padding: 60px 20px; }
-.about-logo-box { 
-    width: 100%; 
-    max-width: 500px; 
-    margin: 0 auto 30px auto; 
-    padding: 20px; 
-    background: white; 
-    border-radius: 15px; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
-    border: 2px solid #ff9900; 
-    text-align: center;
-    transition: 0.3s;
+/* ABOUT LOGO (Bada size aur Animation) */
+.about-logo-box-new { 
+    width: 330px; height: 190px; margin: 0 auto 30px; background: white; 
+    border-radius: 15px; border: 3px solid #ff9900; display: flex; 
+    align-items: center; justify-content: center; overflow: hidden;
+    transition: 0.4s ease-in-out; cursor: pointer; padding: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
-.about-logo-box:hover { transform: scale(1.02); box-shadow: 0 15px 35px rgba(255,153,0,0.2); }
-.about-logo-box img { width: 100%; height: auto; border-radius: 10px; }
+.about-logo-box-new img { width: 90%; height: auto; object-fit: contain; }
+.animated-logo:hover { transform: scale(1.06) translateY(-10px); box-shadow: 0 15px 35px rgba(255,153,0,0.3); }
 
-.sec-title { text-align: center; font-size: 38px; font-weight: bold; }
-.orange-text { color: #ff9900 !important; }
-.h-line.center { margin: 15px auto 40px auto; background: #ff9900; width: 80px; height: 5px; }
-.about-text { text-align: center; font-size: 18px; color: #444; max-width: 950px; margin: 0 auto 50px auto; }
-
-.why-choose-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-.circle-item { text-align: center; }
-.circle-icon { width: 80px; height: 80px; background: #131921; color: #ff9900; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; margin: 0 auto 15px auto; border: 3px solid #ff9900; }
-
-/* Services */
-.services-section { background: #f1f3f5; }
+/* SERVICES (Details fix) */
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
-.s-card { background: white; padding: 35px 20px; text-align: center; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; }
-.s-card:hover { transform: translateY(-8px); border-bottom: 4px solid #ff9900; }
-.s-card i { font-size: 40px; color: #131921; margin-bottom: 15px; }
-.join-btn { display: inline-block; background: #ff9900; color: white; padding: 10px 22px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 15px; }
+.s-card { background: white; padding: 35px 20px; text-align: center; border-radius: 12px; transition: 0.3s; border-top: 5px solid #131921; }
+.service-details { max-height: 0; opacity: 0; overflow: hidden; transition: 0.4s; text-align: left; font-size: 14px; }
+.s-card.active .service-details { max-height: 200px; opacity: 1; padding-top: 15px; }
+.s-card i { font-size: 40px; color: #ff9900; margin-bottom: 15px; }
 
-/* Team Section */
-.team-container { display: flex; justify-content: center; }
-.profile-wrapper-team { width: 180px; height: 180px; margin: 0 auto 15px auto; position: relative; }
-.profile-main-box-team { width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 3px solid #ff9900; }
-.profile-main-box-team img { width: 100%; height: 100%; object-fit: cover; }
-
-/* Footer */
+/* Animations & Team Footer (Waisa hi hai) */
+.motion-float { animation: floating 3s infinite ease-in-out; }
+@keyframes floating { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
 .main-footer { background: #0b0f14; color: #ffffff; padding: 60px 0 20px 0; border-top: 5px solid #ff9900; }
-.footer-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; padding: 0 40px; }
-.footer-logo-text { font-size: 28px; color: #ff9900; display: block; margin-bottom: 15px; }
-.footer-bio { font-size: 15px; color: #bdc3c7; line-height: 1.7; margin-bottom: 25px; }
-.footer-social-links a { color: white; font-size: 22px; margin-right: 20px; transition: 0.3s; }
-.white-text { font-size: 22px; margin-bottom: 15px; color: white; font-weight: bold; }
-.footer-line { background: #ff9900; width: 45px; height: 3px; margin-bottom: 20px; }
-.footer-box ul { list-style: none; }
-.footer-box ul li { margin-bottom: 12px; }
-.footer-box ul li a { color: #bdc3c7; text-decoration: none; transition: 0.2s; }
-.footer-bottom { text-align: center; margin-top: 40px; border-top: 1px solid #1c252e; padding-top: 20px; font-size: 14px; color: #7f8c8d; }
+.footer-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
 
-/* Mobile optimization */
 @media (max-width: 768px) {
-    header { padding: 10px 4%; }
     .menu-toggle { display: block; }
-    nav { position: absolute; top: 60px; left: 0; width: 100%; background: #131921; padding: 25px; display: none; }
+    nav { position: absolute; top: 60px; left: 0; width: 100%; background: #131921; display: none; padding: 25px; }
     nav.active { display: block; }
-    nav ul { flex-direction: column; }
-    nav ul li { margin: 12px 0; }
-    .hero-section { flex-direction: column; padding-top: 100px; }
-    .services-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .about-logo-box-new { width: 280px; height: 160px; }
 }
