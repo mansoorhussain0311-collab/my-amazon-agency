@@ -12,7 +12,13 @@
     <header>
         <div class="logo-container">
             <img src="logo.jpeg" alt="Logo" class="nav-logo-img">
-            <span class="logo-text"><b>SCALEZONE</b></span>
+            <div class="logo-design-new">
+                <div class="scale-box">
+                    <span class="overlay-txt">THE SMART WAY TO GROW</span>
+                    <span class="scale-txt">SCALE</span>
+                </div>
+                <div class="zone-circle-new"><span class="zone-txt">ZONE</span></div>
+            </div>
         </div>
         
         <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
@@ -58,7 +64,7 @@
 
     <section class="about-section" id="about">
         <div class="container">
-            <div class="about-logo-box">
+            <div class="about-logo-box-new animated-logo">
                 <img src="logo.jpeg" alt="Scalezone Logo">
             </div>
 
@@ -93,8 +99,26 @@
             <h2 class="sec-title orange-text">Explore Top Services</h2>
             <div class="h-line center"></div>
             <div class="services-grid">
-                <div class="s-card"><i class="fas fa-file-invoice"></i><h3>LLC Services</h3><p>US/UK LLC Creation</p><a href="https://wa.me/923319837613" class="join-btn">JOIN US</a></div>
-                <div class="s-card"><i class="fas fa-user-shield"></i><h3>Account Manage</h3><p>Monthly FBA Handling</p><a href="https://wa.me/923319837613" class="join-btn">JOIN US</a></div>
+                <div class="s-card" onclick="this.classList.toggle('active')">
+                    <i class="fas fa-file-invoice"></i>
+                    <h3>LLC & UAE Firm Services</h3>
+                    <div class="service-details">
+                        <p><b>What it is:</b> Professional business registration in US, UK, and UAE.</p>
+                        <p><b>What we provide:</b> LLC formation and EIN/VAT filing.</p>
+                    </div>
+                    <a href="https://wa.me/923319837613" class="join-btn">JOIN US</a>
+                </div>
+                
+                <div class="s-card" onclick="this.classList.toggle('active')">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Account Management</h3>
+                    <div class="service-details">
+                        <p><b>What it is:</b> Full-scale management of your Amazon account.</p>
+                        <p><b>What we provide:</b> Managing orders, stock, and customer support.</p>
+                    </div>
+                    <a href="https://wa.me/923319837613" class="join-btn">JOIN US</a>
+                </div>
+
                 <div class="s-card"><i class="fas fa-users"></i><h3>Mentorship</h3><p>Learn Amazon FBA</p><a href="https://wa.me/923319837613" class="join-btn">JOIN US</a></div>
                 <div class="s-card"><i class="fas fa-box-open"></i><h3>Product Hunting</h3><p>Winning Products</p><a href="https://wa.me/923319837613" class="join-btn">JOIN US</a></div>
                 <div class="s-card"><i class="fas fa-check-circle"></i><h3>Brand Approval</h3><p>Soft/Hard Approvals</p><a href="https://wa.me/923319837613" class="join-btn">JOIN US</a></div>
