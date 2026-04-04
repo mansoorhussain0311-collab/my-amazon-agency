@@ -12,12 +12,9 @@
     <header>
         <div class="logo-container">
             <img src="logo.jpeg" alt="Logo" class="nav-logo-img">
-            <div class="logo-design-new">
-                <div class="scale-box">
-                    <span class="overlay-txt">THE SMART WAY TO GROW</span>
-                    <span class="scale-txt">SCALE</span>
-                </div>
-                <div class="zone-circle-new"><span class="zone-txt">ZONE</span></div>
+            <div class="custom-logo-text">
+                <span class="scale">SCAL<span class="e-circle">E</span></span>
+                <span class="zone">ZONE</span>
             </div>
         </div>
         
@@ -64,14 +61,14 @@
 
     <section class="about-section" id="about">
         <div class="container">
-            <div class="about-logo-box-new animated-logo">
+            <div class="about-logo-box">
                 <img src="logo.jpeg" alt="Scalezone Logo">
             </div>
 
             <h2 class="sec-title orange-text">About <b>SCALEZONE</b> Agency</h2>
             <div class="h-line center"></div>
             <p class="about-text">
-                <b>SCALEZONE</b> Agency is a premier digital consultancy dedicated to empowering entrepreneurs in the global e-commerce marketplace. With deep-rooted expertise in the Amazon Wholesale FBA and Private Label models, we bridge the gap between complex market dynamics and sustainable business growth.
+                <b>SCALEZONE</b> Agency is a premier digital consultancy dedicated to empowering entrepreneurs in the global e-commerce marketplace. With deep-rooted expertise in the Amazon Wholesale FBA and Private Label models.
             </p>
             
             <div class="why-choose-grid">
@@ -98,36 +95,64 @@
         <div class="container">
             <h2 class="sec-title orange-text">Explore Top Services</h2>
             <div class="h-line center"></div>
+            <p style="text-align: center; margin-top: -30px; margin-bottom: 30px; color: #666;">(Click on any service to see details)</p>
+            
             <div class="services-grid">
-                <div class="s-card" onclick="this.classList.toggle('active')">
+                <div class="s-card" onclick="openModal('llc')">
                     <i class="fas fa-file-invoice"></i>
-                    <h3>LLC & UAE Firm Services</h3>
-                    <div class="service-details">
-                        <p><b>What it is:</b> Professional business registration in US, UK, and UAE.</p>
-                        <p><b>What we provide:</b> LLC formation and EIN/VAT filing.</p>
-                    </div>
-                    <a href="https://wa.me/923319837613" class="join-btn">JOIN US</a>
-                </div>
-                
-                <div class="s-card" onclick="this.classList.toggle('active')">
-                    <i class="fas fa-user-shield"></i>
-                    <h3>Account Management</h3>
-                    <div class="service-details">
-                        <p><b>What it is:</b> Full-scale management of your Amazon account.</p>
-                        <p><b>What we provide:</b> Managing orders, stock, and customer support.</p>
-                    </div>
-                    <a href="https://wa.me/923319837613" class="join-btn">JOIN US</a>
+                    <h3>LLC Services</h3>
+                    <p>US, UK & UAE Registration</p>
+                    <span class="view-more">View Details</span>
                 </div>
 
-                <div class="s-card"><i class="fas fa-users"></i><h3>Mentorship</h3><p>Learn Amazon FBA</p><a href="https://wa.me/923319837613" class="join-btn">JOIN US</a></div>
-                <div class="s-card"><i class="fas fa-box-open"></i><h3>Product Hunting</h3><p>Winning Products</p><a href="https://wa.me/923319837613" class="join-btn">JOIN US</a></div>
-                <div class="s-card"><i class="fas fa-check-circle"></i><h3>Brand Approval</h3><p>Soft/Hard Approvals</p><a href="https://wa.me/923319837613" class="join-btn">JOIN US</a></div>
-                <div class="s-card"><i class="fas fa-tags"></i><h3>Private Label</h3><p>Launch Your Brand</p><a href="https://wa.me/923319837613" class="join-btn">JOIN US</a></div>
-                <div class="s-card"><i class="fas fa-undo"></i><h3>AC Reinstate</h3><p>Recover Suspended AC</p><a href="https://wa.me/923319837613" class="join-btn">JOIN US</a></div>
-                <div class="s-card"><i class="fas fa-plus-square"></i><h3>AC Creation</h3><p>Professional Setup</p><a href="https://wa.me/923319837613" class="join-btn">JOIN US</a></div>
+                <div class="s-card" onclick="openModal('management')">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Account Manage</h3>
+                    <p>A-Z Account Handling</p>
+                    <span class="view-more">View Details</span>
+                </div>
+
+                <div class="s-card" onclick="openModal('mentorship')">
+                    <i class="fas fa-users"></i>
+                    <h3>Mentorship</h3>
+                    <p>One-on-One Training</p>
+                    <span class="view-more">View Details</span>
+                </div>
+
+                <div class="s-card" onclick="openModal('hunting')">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Product Hunting</h3>
+                    <p>Data-Driven Research</p>
+                    <span class="view-more">View Details</span>
+                </div>
+
+                <div class="s-card" onclick="openModal('approval')">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Brand Approval</h3>
+                    <p>Wholesale Approvals</p>
+                    <span class="view-more">View Details</span>
+                </div>
+
+                <div class="s-card" onclick="openModal('pl')">
+                    <i class="fas fa-tags"></i>
+                    <h3>Private Label</h3>
+                    <p>Build Your Own Brand</p>
+                    <span class="view-more">View Details</span>
+                </div>
             </div>
         </div>
     </section>
+
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modal-body">
+                </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="https://wa.me/923319837613" class="join-btn">CONSULT WITH US</a>
+            </div>
+        </div>
+    </div>
 
     <section class="container" id="team" style="padding-top: 0;">
         <h2 class="sec-title orange-text">TEAM MEMBERS</h2>
@@ -185,6 +210,81 @@
         function toggleMenu() {
             var x = document.getElementById("nav-menu");
             x.classList.toggle("active");
+        }
+
+        // Service Modal Data
+        const serviceData = {
+            'llc': {
+                title: 'LLC & Business Formation',
+                desc: 'Professional business registration services for Amazon sellers across major global markets.',
+                features: ['US LLC Formation (Texas, Wyoming, etc.)', 'UK LTD Registration', 'UAE Freezone Business Setup', 'EIN & ITIN Assistance'],
+                benefits: ['Legal Tax Protection', 'Verified Business Identity', 'Global Bank Account Access']
+            },
+            'management': {
+                title: 'Full Account Management',
+                desc: 'We handle your Amazon store end-to-end so you can focus on scaling.',
+                features: ['Daily Operations Monitoring', 'Customer Support Handling', 'Inventory Management', 'PPC & Ad Optimization'],
+                benefits: ['Passive Income Stream', 'Expert Decision Making', 'Safe Account Health']
+            },
+            'mentorship': {
+                title: '1-on-1 Mentorship',
+                desc: 'Personalized training sessions to make you an Amazon expert.',
+                features: ['Live Zoom Sessions', 'Real-case Study Analysis', 'Wholesale & PL Strategies', 'Lifetime Community Access'],
+                benefits: ['Avoid Expensive Mistakes', 'Direct Expert Feedback', 'Accelerated Learning']
+            },
+            'hunting': {
+                title: 'Product Hunting',
+                desc: 'We find high-demand, low-competition products using premium data tools.',
+                features: ['Helium10 & Jungle Scout Analysis', 'Competitor Research', 'Profit Margin Calculation', 'Sourcing Feasibility'],
+                benefits: ['High Success Rate', 'Reduced Risk', 'Scalable Product Ideas']
+            },
+            'approval': {
+                title: 'Brand & Category Approval',
+                desc: 'Unlock restricted brands and categories with our proven methods.',
+                features: ['Soft/Hard Brand Approvals', 'Invoice Verification', 'Gating Services', 'Wholesale Distributor Links'],
+                benefits: ['Access to Top Brands', 'High Selling Velocity', 'Market Authority']
+            },
+            'pl': {
+                title: 'Private Label Launch',
+                desc: 'Create and launch your own brand from scratch.',
+                features: ['Logo & Packaging Design', 'Manufacturer Sourcing', 'EBC/A+ Content Creation', 'Launch & Rank Strategy'],
+                benefits: ['Asset Valuation', 'Zero Competition on Listing', 'Complete Brand Control']
+            }
+        };
+
+        function openModal(serviceId) {
+            const data = serviceData[serviceId];
+            const modal = document.getElementById('serviceModal');
+            const body = document.getElementById('modal-body');
+            
+            body.innerHTML = `
+                <h2 class="orange-text">${data.title}</h2>
+                <p style="margin: 15px 0;">${data.desc}</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; margin-top: 20px;">
+                    <div>
+                        <h4 style="color: #131921;"><i class="fas fa-list-check orange-text"></i> What we do:</h4>
+                        <ul style="padding-left: 20px; margin-top: 10px; font-size: 14px;">
+                            ${data.features.map(f => `<li>${f}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: #131921;"><i class="fas fa-star orange-text"></i> Key Benefits:</h4>
+                        <ul style="padding-left: 20px; margin-top: 10px; font-size: 14px;">
+                            ${data.benefits.map(b => `<li>${b}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('serviceModal').style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('serviceModal');
+            if (event.target == modal) { modal.style.display = "none"; }
         }
     </script>
 </body>
